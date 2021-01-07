@@ -14,7 +14,7 @@ class TableExport:
     Export data from a table to the file type specified.
 
     Arguments:
-        export_format (str): one of `csv, json, latex, ods, tsv, xls, xlsx, yaml`
+        export_format (str): one of `csv, json, latex, ods, pdf, tsv, xls, xlsx, yaml`
 
         table (`~.Table`): instance of the table to export the data from
 
@@ -28,6 +28,7 @@ class TableExport:
     JSON = "json"
     LATEX = "latex"
     ODS = "ods"
+    PDF = "pdf"
     TSV = "tsv"
     XLS = "xls"
     XLSX = "xlsx"
@@ -38,6 +39,7 @@ class TableExport:
         JSON: "application/json",
         LATEX: "text/plain",
         ODS: "application/vnd.oasis.opendocument.spreadsheet",
+        PDF: "application/pdf",
         TSV: "text/tsv; charset=utf-8",
         XLS: "application/vnd.ms-excel",
         XLSX: "application/vnd.ms-excel",
